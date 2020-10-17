@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Press button for free points</title>
+    <script>
+      var prize = 0;
+
+      function addScore() {
+        prize = prize + 1;
+        console.log = "Function ran";
+        document.getElementById("score").innerHTML = prize;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Score: <span id="score">0</span></h1><br>
+    <button onclick="addScore();">Click Me!</button>
+  </body>
+</html>
